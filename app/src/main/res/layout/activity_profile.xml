@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:background="@drawable/profileactivityimage">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/visit_profile_image"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:src="@drawable/profileimage">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/visit_profile_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/visit_profile_image"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="User name"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:textAlignment="center"
+        android:textAllCaps="false"/>
+
+    <TextView
+        android:id="@+id/visit_profile_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/visit_profile_name"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Hey..! i am using webchat "
+        android:paddingTop="15dp"
+        android:textColor="@color/white"
+        android:textSize="38dp"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:textAlignment="center"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/send_message_request_button"
+        android:layout_below="@+id/visit_profile_status"
+        android:background="@drawable/inputs_blue"
+        android:paddingTop="10dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="65dp"
+        android:text="Send Message"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/decline_message_request_button"
+        android:layout_below="@+id/send_message_request_button"
+        android:background="@drawable/inputs_blue"
+        android:paddingTop="5dp"
+        android:visibility="invisible"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="65dp"
+        android:text="Cancel Chat Request"
+        android:textStyle="bold"
+        android:textSize="19dp"/>
+
+
+
+</RelativeLayout>
